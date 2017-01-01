@@ -1,0 +1,291 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Rahul}{Ghosh}{ %\urlstyle{same}\href{http://debarghyadas.com}{debarghyadas.com}| \href{http://fb.co/dd}{fb.co/dd}\\
+\href{mailto:rahulghosh2021@gmail.com}{rahulghosh2021@gmail.com} | 8420784442 | \href{mailto:rahul.ghosh@samsung.com}{rahul.ghosh@samsung.com}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Indian Institute of \newline Technology, Guwahati}
+\descript{B.Tech in Electronics \& Electrical Engineering}
+\location{CGPA: 7.8/10 \\ May 2016 | Guwahati, India}
+\sectionsep
+
+%\subsection{Cornell University}
+%\descript{BS in Computer Science}
+%\location{May 2014 | Ithaca, NY}
+%College of Engineering \\
+%Magna Cum Laude\\
+%\location{ Cum. GPA: 3.83 / 4.0 \\
+%Major GPA: 3.9 / 4.0}
+%\sectionsep
+
+\subsection{The Army Public School}
+\descript{Higher Secondary Examination}
+\location{Percentage: 92.6\% \\ Grad. May 2011 | Pune, India}
+\descript{Secondary School Certificate}
+\location{Percentage: 93.8\% \\ Grad. May 2009 | Pune, India}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/2021rahul}{\bf 2021rahul} \\
+LinkedIn://  \href{https://www.linkedin.com/in/2021rahul}{\bf 2021rahul} \\
+Facebook:// \href{https://www.facebook.com/2021rahul}{\bf 2021rahul} \\
+Twitter://  \href{https://twitter.com/2021rahul}{\bf @2021rahul} \\
+%YouTube://  \href{https://www.youtube.com/user/DeedyDash007}{\bf DeedyDash007} \\
+%Quora://  \href{https://www.quora.com/Debarghya-Das}{\bf Debarghya-Das}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+% \subsection{Graduate}
+% Advanced Machine Learning \\
+% Open Source Software Engineering \\
+% Advanced Interactive Graphics \\
+% Compilers + Practicum \\
+% Cloud Computing \\
+% Evolutionary Computation \\
+% Defending Computer Networks \\
+% Machine Learning \\
+% \sectionsep
+
+\subsection{Undergraduate}
+Embedded Systems \& Computer Architecture\\
+Pattern Recognition \& Machine Learning \\
+Digital Image Processing \\
+Computer Vision \\
+Probability and Random Processes \\
+Parallel Computing\\
+Introduction to Computing {\footnotesize \textit{\textbf{(theory \& laboratory course) }}} \\
+Digital Circuits and Microprocessors {\footnotesize \textit{\textbf{(theory \& laboratory course) }}} \\
+Algorithms and Data Structure \\
+Mathematics {\footnotesize \textit{\textbf{(Linear Algebra, Real Analysis, Multivariable Calculus, Complex Analysis) }}} \\
+Data Scientist Toolbox and R Programming {\footnotesize \textit{\textbf{(Coursera) }}} \\
+
+
+
+% Information Retrieval \\
+% Operating Systems \\
+% Artificial Intelligence + Practicum \\
+% Functional Programming \\
+% Computer Graphics + Practicum \\
+% {\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst 2x) }}} \\
+% Unix Tools and Scripting \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+C \textbullet{} C++ \textbullet{} R \textbullet{} Python \textbullet{} Ruby on Rails \textbullet{} Shell \textbullet{} 8051 \& 8085 Assembly
+\subsection{Tools/Frameworks}
+Theano \textbullet{} TensorFlow \textbullet{} OpenCV \textbullet{} MATLAB \textbullet{} \LaTeX\ \textbullet{} Multisim \textbullet{} Arduino Uno Programming
+\subsection{Operating Systems}
+Linux (Ubuntu) \textbullet{} Mac OS \textbullet{} Windows
+% \location{Over 5000 lines:}
+% Java \textbullet{}   Shell \textbullet{} Python \textbullet{} Javascript \\
+% OCaml \textbullet{} Matlab \textbullet{} Rails \textbullet{} \LaTeX\ \\ 
+% \location{Over 1000 lines:}
+% C \textbullet{} C++ \textbullet{} CSS \textbullet{} PHP \textbullet{} Assembly \\
+% \location{Familiar:}
+% AS3 \textbullet{} iOS \textbullet{} Android \textbullet{} MySQL
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Samsung R\&D}
+\descript{| Software Engineer }
+\location{Samsung Research Institute - Delhi}
+\location{July 2016 - Present | Noida, India}
+\sectionsep
+
+\runsubsection{IDRBT {\footnotesize ESTD. BY Reserve Bank of India}}
+\descript{| Project Trainee}
+\location{Institute of Development \& Research in Banking Technology}
+\location{May 2015 – July 2015 | Hyderabad, India}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Worked with \textbf{\href{http://www.idrbt.ac.in/vravi.html}{Dr. Vadlamani Ravi}} and completed 2 projects.
+\item Co-authored 2 research papers based on the projects carried out during the internship period.
+\item Completed MATLAB software certification from the institute.
+% \item 52 out of 2500 applicants chosen to be a KPCB Fellow 2014.
+% \item Led and shipped Yoda - the admin interface for the new Phoenix platform. 
+% \item Full-stack developer - Wrote and reviewed code for JS using Backbone, Jade, Stylus and Require and Scala using Play
+\end{tightemize}
+\sectionsep
+
+% \runsubsection{Google}
+% \descript{| Software Engineering Intern }
+% \location{May 2013 – Aug 2013 | Mountain View, CA}
+% \begin{tightemize}
+% \item Worked on the YouTube Captions team, in Javascript and Python to plan, to design and develop the full stack to add and edit Automatic Speech Recognition captions. In production.
+% \item Created a backbone.js-like framework for the Captions editor.
+% \end{tightemize}
+% \sectionsep
+
+% \runsubsection{Phabricator}
+% \descript{| Open Source Contributor \& Team Leader}
+% \location{Jan 2013 – May 2013 | Palo Alto, CA \& Ithaca, NY}
+% \begin{tightemize}
+% \item Phabricator is used daily by Facebook, Dropbox, Quora, Asana and more.
+% \item I created the Meme generator and more in PHP and Shell.
+% \item Led a team from MIT, Cornell, IC London and UHelsinki for the project.
+% \end{tightemize}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{\href{https://github.com/2021rahul/Bachelor_Thesis_Project}{GLAND SEGMENTATION \& CLASSIFICATION USING DEEP LEARNING}}
+\descript{| BACHELOR THESIS PROJECT}
+\location{AUG 2015 – APR 2016 | IIT Guwahati, India}
+Worked with \textbf{\href{http://www.iitg.ernet.in/eee/amitsethi.html}{Prof Amit Sethi}} to create a novel approach to segment H\&E stained colon tissue images of the Warwick-QU dataset from the gland segmentation contest at MICCAI'15 by using Convolutional Neural Networks.
+\sectionsep
+
+\runsubsection{Pattern Recognition \& Machine Learning Course Project}\\
+\location{AUG 2014 – APR 2015 | IIT Guwahati, India}
+Designed and Implemented projects such as Handwritten Digit Recognition, E-mail Classifier and Face Recognition etc under the guidance of \textbf{\href{http://www.iitg.ernet.in/eee/suresh.html}{Prof Suresh Sundaram}}
+\sectionsep
+
+\runsubsection{\href{http://github.com/ashimajain2595/ComputerVision_Project}{PCB Fault Detection \& Classification}}\\
+\location{MAR 2016 – APR 2016 | IIT Guwahati, India}
+Developed an automated system for PCB fault detection and classification under the guidance of \textbf{\href{http://www.iitg.ernet.in/eee/mkb.html}{Prof M.K. Bhuyan}} 
+\sectionsep
+
+\runsubsection{WALL CLIMBING ROBOT}
+\descript{| DESIGN COURSE PROJECT}
+\location{JAN 2015 – APR 2015 | IIT Guwahati, India}
+Worked with \textbf{\href{http://www.iitg.ernet.in/eee/pguha.html}{Prof Prithwijit Guha}} to develop a wall climbing robot with payload capable of climbing any rugged terrain.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ACHIEVEMENTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Achievements \& Test Scores} 
+\begin{tabular}{rll}
+2016         & 327/340 & Graduate Record Examinations(GRE)\\
+2012	     & 99.6 percentile  & IIT-Joint Entrance Exam(IIT-JEE)\\
+2012	     & 99.87 percentile  & All India Engineering Entrance Exam(AIEEE)\\
+2012	     & All India Rank of 534  & ISAT-2012\\
+2011     & All India Rank of 6 & International Master Mathematics Olympiad\\
+% 2011     & Special Prize & Highest marks in Maths and above 90\% marks\\ 
+%          & &in senior secondary examination\\
+% 2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Publications}
+\vspace{\topsep}
+\vspace{\topsep}
+% \renewcommand\refname{\vskip 3cm} % Couldn't get this working from the .cls file
+\bibliographystyle{abbrv}
+\bibliography{publications}
+\nocite{*}
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
